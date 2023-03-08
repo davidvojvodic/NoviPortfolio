@@ -6,6 +6,7 @@ import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { eye } from "../assets";
 
 const ProjectCard = ({
   index,
@@ -14,6 +15,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  page_link,
 }) => (
   <motion.div
     variants={fadeIn("up", "spring", index * 0.5, 0.75)}
@@ -21,7 +23,7 @@ const ProjectCard = ({
   >
     <Tilt
       options={{ max: 45, scale: 1, speed: 450 }}
-      className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full h-full"
+      className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full h-full ease-out duration-700"
     >
       <div className="relative w-full h-[230px]">
         <img
@@ -31,13 +33,13 @@ const ProjectCard = ({
         />
         <div className="absolute inset-0 flex justify-between m-3 card-img_hover">
           <div
-            onClick={() => window.open(source_code_link, "_blank")}
+            onClick={() => window.open(page_link, "_blank")}
             className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
           >
             <img
-              src={github}
+              src={eye}
               alt="github"
-              className="w-1/2 h-1/2 object-contain"
+              className="w-1/2 h-1/2 object-contain rounded-full"
             />
           </div>
           <div
@@ -55,7 +57,9 @@ const ProjectCard = ({
 
       <div className="mt-5">
         <h3 className="text-white font-bold text-[24px]">{name}</h3>
-        <p className="mt-2 text-secondary text-[14px]">{description}</p>
+        <p className="mt-2 text-secondary text-[14px] text-justify">
+          {description}
+        </p>
       </div>
 
       <div className="mt-4 flex flex-wrap gap-2 items-end">
@@ -106,4 +110,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "work");

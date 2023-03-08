@@ -27,6 +27,7 @@ import {
   app4,
   app5,
   app6,
+  app7,
   cor1,
   cor2,
   cor3,
@@ -42,8 +43,16 @@ export const navLinks = [
     title: "About",
   },
   {
+    id: "life",
+    title: "Life",
+  },
+  {
     id: "work",
     title: "Work",
+  },
+  {
+    id: "skills",
+    title: "Skills",
   },
   {
     id: "contact",
@@ -91,10 +100,7 @@ const technologies = [
     name: "React JS",
     icon: reactjs,
   },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
+
   {
     name: "Tailwind CSS",
     icon: tailwind,
@@ -187,28 +193,28 @@ const testimonials = [
     title: "Introduction to Front-End Development",
     testimonial:
       "Distinguish between front-end, back-end, and full-stack developers. Create and style a webpage with HTML and CSS. The benefits of working with UI frameworks.",
-    link: "",
+    link: "https://www.coursera.org/account/accomplishments/verify/VGKT8BYRPRNP",
     image: cor1,
   },
   {
     title: "HTML & CSS in depth",
     testimonial:
       "Create a simple form with a responsive layout using HTML5 and CSS. Create a responsive layout using CSS. Create a UI using Bootstrap. Implement debugging tools.",
-    link: "",
+    link: "https://www.coursera.org/account/accomplishments/verify/EL7C7ULC8F22",
     image: cor2,
   },
   {
-    title: " Version Control",
+    title: "Version Control",
     testimonial:
       "Implement Version Control systems. Navigate and configure using the command line. Use a GitHub repository. Create a GitHub repository. Manage code revisions.",
-    link: "",
+    link: "https://www.coursera.org/account/accomplishments/verify/3BK6TDZLBT7R",
     image: cor3,
   },
   {
     title: "Programming with JavaScript",
     testimonial:
       "Creating simple JavaScript codes. Creating and manipulating objects and arrays. Writing unit tests using Jest.",
-    link: "https://coursera.org/verify/RVE6WKW74E2U",
+    link: "https://www.coursera.org/account/accomplishments/verify/RVE6WKW74E2U",
     image: cor4,
   },
   {
@@ -250,7 +256,8 @@ const projects = [
       },
     ],
     image: app1,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/davidvojvodic/Modern-dummy-website",
+    page_link: "https://magical-chimera-1a7d67.netlify.app/",
   },
   {
     name: "Modern Restaurant Website",
@@ -267,7 +274,8 @@ const projects = [
       },
     ],
     image: app2,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/davidvojvodic/RestaurantWebsite",
+    page_link: "https://capable-melomakarona-4bab71.netlify.app/",
   },
   {
     name: "Modern App Website",
@@ -288,7 +296,8 @@ const projects = [
       },
     ],
     image: app3,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/davidvojvodic/AppWebsite",
+    page_link: "https://deft-narwhal-a00854.netlify.app/",
   },
   {
     name: "Gym Web App",
@@ -309,7 +318,8 @@ const projects = [
       },
     ],
     image: app4,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/davidvojvodic/gym_app",
+    page_link: "https://dazzling-narwhal-a1e275.netlify.app/",
   },
   {
     name: "Web Dashboard",
@@ -330,7 +340,30 @@ const projects = [
       },
     ],
     image: app5,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/davidvojvodic/react-admin",
+    page_link: "https://luxury-croissant-0192cb.netlify.app/",
+  },
+  {
+    name: "AI Image Creation App",
+    description:
+      "An AI image creation application built with MongoDB, Express, React, Node.js and Material UI. It has a theme switcher, a grid with shared images from the community and an option to create your own image. To create your own image you type something you want in the prompt and the API from OpenAI will generate an image for you.",
+    tags: [
+      {
+        name: "openai",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: app7,
+    source_code_link: "https://github.com/davidvojvodic/AI-app",
+    page_link: "https://dulcet-profiterole-5347a3.netlify.app/",
   },
   {
     name: "NFT Drop website",
@@ -351,7 +384,8 @@ const projects = [
       },
     ],
     image: app6,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/davidvojvodic/davidnft",
+    page_link: "https://davidnft.vercel.app/",
   },
 ];
 

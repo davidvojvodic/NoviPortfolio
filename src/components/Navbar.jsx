@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logoo, menu, close } from "../assets";
-import { BsInstagram } from "react-icons/bs";
+import { BsInstagram, BsLinkedin, BsGithub } from "react-icons/bs";
 
 const Navbar = () => {
   // State za active navlink pa toggle menu za menše naprave
@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     // navbar keri je fixani gor
     <nav
-      className={`${styles.paddingX} w-full flex items-center bg-transparent fixed top-0 z-20 bg-primary`}
+      className={`${styles.paddingX} w-full flex items-center fixed top-0 z-20 bg-primaryblur backdrop-blur-sm`}
     >
       <div className="w-full flex justify-around items-center max-w-full mx-auto">
         <Link
@@ -25,7 +25,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logoo} alt="logo" className="w-36 h-36 object-contain" />
+          <img src={logoo} alt="logo" className="w-28 h-28 object-contain" />
           <p className="flex text-white text-[18px] font-semibold">
             | David Vojvodić
           </p>
@@ -79,8 +79,35 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-        <div className="flex flex-end">
-          <BsInstagram />
+        <div className="flex flex-end gap-5">
+          <div className="w-9 h-9 hover:bg-[#5A5A5A] rounded-full flex justify-center items-center transition-all duration-500 ease-in-out">
+            <a
+              href="https://www.instagram.com/davidvojvodic/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BsInstagram />
+            </a>
+          </div>
+          <div className="w-9 h-9 hover:bg-[#5A5A5A] rounded-full flex justify-center items-center transition-all duration-500 ease-in-out">
+            <a
+              href="https://www.linkedin.com/in/david-vojvodi%C4%87-5944a2256/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BsLinkedin />
+            </a>
+          </div>
+
+          <div className="w-9 h-9 hover:bg-[#5A5A5A] rounded-full flex justify-center items-center transition-all duration-500 ease-in-out">
+            <a
+              href="https://github.com/davidvojvodic"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BsGithub />
+            </a>
+          </div>
         </div>
       </div>
     </nav>

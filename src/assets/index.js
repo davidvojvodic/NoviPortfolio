@@ -42,6 +42,7 @@ import app3 from "./app3.png";
 import app4 from "./app4.png";
 import app5 from "./app5.png";
 import app6 from "./app6.jpg";
+import app7 from "./app7.jpg";
 import cor1 from "./cert/Coursera1.png";
 import cor2 from "./cert/Coursera2.png";
 import cor3 from "./cert/Coursera3.jpeg";
@@ -49,8 +50,10 @@ import cor4 from "./cert/Coursera4.png";
 import cor5 from "./cert/Coursera5.png";
 import cor6 from "./cert/Coursera6.png";
 import cor7 from "./cert/Coursera7.png";
+import eye from "./eye.png";
 
 export {
+  eye,
   cor1,
   cor2,
   cor3,
@@ -64,6 +67,7 @@ export {
   app4,
   app5,
   app6,
+  app7,
   scss,
   sanity,
   formik,
