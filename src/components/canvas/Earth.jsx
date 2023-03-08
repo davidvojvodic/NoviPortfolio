@@ -8,13 +8,7 @@ const Earth = () => {
 
   return (
     <mesh>
-      <hemisphereLight
-        intensity={1}
-        position={[0, 1, 0]}
-        angle={Math.PI / 2}
-        penumbra={1}
-        castShadow
-      />
+      <hemisphereLight intensity={1} position={[0, 1, 0]} />
       <spotLight
         position={[0, 1, 0]}
         angle={0.12}
