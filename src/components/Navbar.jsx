@@ -76,10 +76,40 @@ const Navbar = () => {
                   <a href={`#${link.id}`}>{link.title}</a>
                 </li>
               ))}
+              <div className="flex flex-end gap-5">
+                <div className="w-9 h-9 hover:bg-[#5A5A5A] rounded-full flex justify-center items-center transition-all duration-500 ease-in-out">
+                  <a
+                    href="https://www.instagram.com/davidvojvodic/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <BsInstagram />
+                  </a>
+                </div>
+                <div className="w-9 h-9 hover:bg-[#5A5A5A] rounded-full flex justify-center items-center transition-all duration-500 ease-in-out">
+                  <a
+                    href="https://www.linkedin.com/in/david-vojvodi%C4%87-5944a2256/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <BsLinkedin />
+                  </a>
+                </div>
+
+                <div className="w-9 h-9 hover:bg-[#5A5A5A] rounded-full flex justify-center items-center transition-all duration-500 ease-in-out">
+                  <a
+                    href="https://github.com/davidvojvodic"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <BsGithub />
+                  </a>
+                </div>
+              </div>
             </ul>
           </div>
         </div>
-        <div className="flex flex-end gap-5">
+        <div className="hidden lg:flex flex-end gap-5">
           <div className="w-9 h-9 hover:bg-[#5A5A5A] rounded-full flex justify-center items-center transition-all duration-500 ease-in-out">
             <a
               href="https://www.instagram.com/davidvojvodic/"
