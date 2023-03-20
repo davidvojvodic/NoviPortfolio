@@ -8,14 +8,11 @@ import {
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   git,
   figma,
   meta,
-  scss,
-  formik,
   mui,
   threejs,
   prva,
@@ -35,6 +32,7 @@ import {
   cor5,
   cor6,
   cor7,
+  net,
 } from "../assets";
 
 export const navLinks = [
@@ -113,14 +111,6 @@ const technologies = [
   {
     name: "Three JS",
     icon: threejs,
-  },
-  {
-    name: "SCSS",
-    icon: scss,
-  },
-  {
-    name: "Formik",
-    icon: formik,
   },
 
   {
@@ -386,6 +376,28 @@ const projects = [
     image: app6,
     source_code_link: "https://github.com/davidvojvodic/davidnft",
     page_link: "https://davidnft.vercel.app/",
+  },
+  {
+    name: "Netflix Clone",
+    description:
+      "Netflix Clone built in React with NextJS, Tailwind CSS, MongoDB, Prisma and NextAuth. The application lets you login with your Google or Github account, as well as creating a new account. When logged in you can watch movies and add/remove them to/from your favorites.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: net,
+    source_code_link: "https://github.com/davidvojvodic/netflix",
+    page_link: "https://netflix-w85t.vercel.app/auth",
   },
 ];
 
