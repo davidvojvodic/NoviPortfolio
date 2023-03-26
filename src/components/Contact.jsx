@@ -72,7 +72,7 @@ const Contact = () => {
       {/*Adding the left section of contact page containing contact form*/}
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
+        className="flex-[0.75] bg-primaryblur p-8 rounded-2xl"
       >
         {/*Heading and sub-heading*/}
         <p className={styles.sectionSubText}>Get in touch</p>

@@ -13,7 +13,7 @@ import { textVariant } from "../utils/motion"; // Importing constants for animat
 // A subcomponent that represents a single experience card on the timeline
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
-    contentStyle={{ background: "#1d1836", color: "#fff" }} // Styling of the main content area inside the timeline element
+    contentStyle={{ background: "rgba(5, 8, 22, 0.5)", color: "#fff" }} // Styling of the main content area inside the timeline element
     contentArrowStyle={{ borderRight: "7px solid #232631" }} // Styling of the arrow on the right side of the timeline element
     date={experience.date} // The date of the experience
     iconStyle={{ background: experience.iconBg }} // The background color of the icon on the left side of the timeline element

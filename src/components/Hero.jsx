@@ -12,13 +12,13 @@ const Hero = () => {
       >
         {/* 2 self closing div-a ka dodata obliko kroga pa črte */}
         <div className="flex flex-col justify-center items-center mt-5">
-          <div className="w-5 h-5 rounded-full bg-[#b82bff]" />
+          <div className="w-5 h-5 rounded-full bg-[#5369ED]" />
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#b82bff]">David Vojvodić</span>
+            Hi, I'm <span className="text-[#5369ED]">David Vojvodić</span>
           </h1>
           <p className={`${styles.heroSubText}`}>
             FRONTEND DEVELOPER <br /> UI/UX DESIGNER

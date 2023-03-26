@@ -48,11 +48,11 @@ const FeedbackCard = ({ index, testimonial, title, image, link }) => (
 //a component to render all feedbacks using FeedbackCard
 const Feedbacks = () => {
   return (
-    <div className="mt-12 bg-black-100 rounded-[20px]">
+    <div className="mt-12 bg-primaryblur rounded-[20px]">
       {" "}
       {/*some CSS classes*/}
       <div
-        className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}
+        className={`${styles.padding} bg-primaryblur rounded-2xl min-h-[300px]`}
       >
         <motion.div variants={textVariant()}>
           {" "}
