@@ -33,6 +33,7 @@ import {
   cor6,
   cor7,
   net,
+  twitt,
 } from "../assets";
 
 export const navLinks = [
@@ -398,6 +399,28 @@ const projects = [
     image: net,
     source_code_link: "https://github.com/davidvojvodic/netflix",
     page_link: "https://netflix-w85t.vercel.app/auth",
+  },
+  {
+    name: "Twitter Clone",
+    description:
+      "Twitter Clone built in React with NextJS, Tailwind CSS, MongoDB, Prisma and NextAuth. The website lets you register and login into your account which you can edit",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: twitt,
+    source_code_link: "https://github.com/davidvojvodic/twitter-clone",
+    page_link: "https://twitter-clone-eta-self.vercel.app/",
   },
 ];
 

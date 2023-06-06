@@ -52,8 +52,10 @@ import cor6 from "./cert/Coursera6.png";
 import cor7 from "./cert/Coursera7.png";
 import eye from "./eye.png";
 import net from "./net.jpg";
+import twitt from "./twitt.png";
 
 export {
+  twitt,
   net,
   eye,
   cor1,
